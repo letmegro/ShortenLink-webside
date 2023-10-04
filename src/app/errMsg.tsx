@@ -55,7 +55,7 @@ function checkUrl (string:any) {
     
     btn.innerHTML = message;
     btn.disabled = true;
-    await fetch("http://localhost:8080/api/shorten-link", {
+    await fetch("/api/shorten", {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

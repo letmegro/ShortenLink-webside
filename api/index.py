@@ -11,7 +11,7 @@ def shortenLink(link):
     short_url = type_tiny.tinyurl.short(link)
     return short_url
 
-@app.route("/api/shorten-link", methods=['POST'])
+@app.route("/api/shorten", methods=['POST'])
 def return_home():
     data = request.json
     short_url = shortenLink(data['Link']);
