@@ -16,7 +16,3 @@ def return_home():
     data = request.json
     short_url = shortenLink(data['Link']);
     return jsonify(short_url)
-
-@app.route("/api/python")
-def hello_world():
-    return "<p>Hello, World!</p>"
