@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#cta{
+    background-image: url("../../public/images/bg-boost-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ficon:hover{
+    filter: invert(79%) sepia(61%) saturate(464%) hue-rotate(130deg) brightness(89%) contrast(85%);
+}
+
+.hamburger{
+    cursor: position;
+    width: 24px;
+    height: 24px;
+    transition: all 0.25s;
+    position: relative;
+}
+
+.hamTop,
+.hamMiddle,
+.hamBottom {
+    position:absolute;
+    width: 24px;
+    height: 2px;
+    top: 0;
+    left: 0;
+    background: black;
+    transform: rotate(0);
+    transition: all 0.5s;
+}
+
+.hamMiddle{
+    transform: translateY(7px);
+}
+
+.hamBottom{
+    transform: translateY(14px);
+}
+
+.open {
+    transform: rotate(90deg);
+}
+.open .hamTop {
+    transform: rotate(45deg) translateY(6px) translateX(6px);
+}
+.open > .hamMiddle{
+    display: none;
+} 
+.open > .hamBottom {
+    transform: rotate(-45deg) translateY(6px) translateX(-6px);
+}
+
+.mini-menu{
+    @apply hover:text-pink-500 py-4 pl-5 border-y border-white;
+}
+
+.i1,.i2,.i3,.i4,.i5,.i6,.i7,.i8{
+    position:absolute;
+    width: 24px;
+    height: 2px;
+    background: black;
+    transform: rotate(0);
+    transition: all 0.5s;
+    
+}
+.i1{
+    transform: translateX(-17px);
+    animation: fadedSpan 4s 0s infinite linear;
+}
+.i2{
+    transform: translateX(-12px) translateY(-17px) rotate(45deg);
+    animation: fadedSpan 4.5s 0.5s infinite linear;
+}
+.i3{
+    transform: translateX(-12px) translateY(17px) rotate(-45deg);
+    animation: fadedSpan 5s 1s infinite linear;
+}
+.i4{
+    transform: translateX(5px) translateY(-22px) rotate(90deg);
+    animation: fadedSpan 5.5s 1.5s infinite linear;
+}
+.i5{
+    transform: translateX(5px) translateY(22px) rotate(90deg);
+    animation: fadedSpan 6s 2s infinite linear;
+}
+.i6{
+    transform: translateX(27px);
+    animation: fadedSpan 6.5s 2.5s infinite linear;
+}
+.i7{
+    transform: translateX(22px) translateY(-17px) rotate(-45deg);
+    animation: fadedSpan 7s 3s infinite linear;
+}
+.i8{
+    transform: translateX(22px) translateY(17px) rotate(45deg);
+    animation: fadedSpan 7.5s 3.5s infinite linear;
+}
+
+@keyframes fadedSpan{
+    0% {
+        opacity: 100%;
+    }
+    60%{
+        opacity: 10%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
