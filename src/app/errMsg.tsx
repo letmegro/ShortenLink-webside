@@ -74,7 +74,7 @@ function checkUrl (string:any) {
     ).then(() => {}
     ).catch(error => {console.log(error)});
     setMessage("Shortening...");
-    copyBtn.innerHTML = "Copied!";
+    copyBtn.innerHTML = "Copy";
 }
 
 var originalLink = "";
