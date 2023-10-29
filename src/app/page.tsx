@@ -66,7 +66,9 @@ export default function Home() {
               More than just shorter links
             </h1>
             <p className='text-2xl text-center text-gray-400 lg:max-w-md lg:text-left'>
-              Build your brand{`'`}s recognition and get detailed insights on how your links are performing.
+              Sometimes links can be a bit too long and you want to shorten it for readability or simply to hide a YouTube link in order to
+               <a className='hover:text-green-700 transition duration-200 hover:font-bold' target='_blank' href={process.env.NEXT_PUBLIC_RL}> Rick Roll </a> 
+               a friend
             </p>
             <div className='mx-auto lg:mx-0'>
               <a className='cursor-pointer py-5 px-10 text-2xl font-bold text-white bg-cyan rounded-full lg:py-4 hover:opacity-70'>

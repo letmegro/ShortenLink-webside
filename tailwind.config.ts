@@ -23,6 +23,15 @@ const config: Config = {
       spacing: {
         180: '32rem',
       },
+      keyframes: {
+        shake: {
+          '25%, 75%': { transform: 'rotate(-20deg)'},
+          '0%, 50%, 100%': { transform: 'rotate(20deg)'},
+        },
+      },
+      animation: {
+        'shake-fast' : 'shake 2s ease-in infinite',
+      },
     },
   },
   plugins: [],
