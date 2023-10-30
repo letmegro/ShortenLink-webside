@@ -16,3 +16,7 @@ def return_home():
     data = request.json
     short_url = shortenLink(data['Link']);
     return jsonify(short_url)
+
+@app.route("/api/about", methods=['GET'])
+def about_page():
+    return '<a href="/">Go Back</a><br><h2>This is currently a place holder page as this project is being expanded</h2>'

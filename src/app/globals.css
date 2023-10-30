@@ -12,6 +12,11 @@
     filter: invert(79%) sepia(61%) saturate(464%) hue-rotate(130deg) brightness(89%) contrast(85%);
 }
 
+.ficon2:hover{
+    @apply scale-110 transition duration-100;
+    filter: invert(30%) sepia(140%) saturate(300%) hue-rotate(320deg) brightness(89%) contrast(190%);
+}
+
 .hamburger{
     cursor: position;
     width: 24px;

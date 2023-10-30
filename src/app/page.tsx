@@ -67,7 +67,7 @@ export default function Home() {
             </h1>
             <p className='text-2xl text-center text-gray-400 lg:max-w-md lg:text-left'>
               Sometimes links can be a bit too long and you want to shorten it for readability or simply to hide a YouTube link in order to
-               <a className='hover:text-green-700 transition duration-200 hover:font-bold' target='_blank' href={process.env.NEXT_PUBLIC_RL}> Rick Roll </a> 
+               <a className='hover:text-green-700 transition duration-200 hover:font-bold' target='_blank' href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'> Rick Roll </a> 
                a friend
             </p>
             <div className='mx-auto lg:mx-0'>
@@ -143,8 +143,8 @@ export default function Home() {
           <div className="relative flex flex-col p-6 space-y-6 bg-white rounded-lg md:w-1/3">
             {/* container */}
             <div className="absolute -ml-10 left-1/2 -top-10 md:left-16">
-              <div className="flex items-center justify-center w-20 h-20 p-4 rounded-full bg-veryDarkViolet">
-                <Image src={iconBrandRec} alt=''/>
+              <div className="flex items-center justify-center w-20 h-20 p-4 rounded-full ficon2 bg-veryDarkViolet">
+                <Image src={iconBrandRec} className='ficon' alt=''/>
               </div>
             </div>
             <h5 className="pt-6 text-xl font-bold text-center capitalize md:text-left">
@@ -159,8 +159,8 @@ export default function Home() {
           <div className="relative flex flex-col mt-24 p-6 space-y-6 bg-white rounded-lg md:w-1/3 md:mt-8">
             {/* container */}
             <div className="absolute -ml-10 left-1/2 -top-10 md:left-16">
-              <div className="flex items-center justify-center w-20 h-20 p-4 rounded-full bg-veryDarkViolet">
-                <Image src={iconDetaledRec} alt=''/>
+              <div className="flex items-center ficon2 justify-center w-20 h-20 p-4 rounded-full bg-veryDarkViolet">
+                <Image src={iconDetaledRec} className='ficon' alt=''/>
               </div>
             </div>
             <h5 className="pt-6 text-xl font-bold text-center capitalize md:text-left">
@@ -175,8 +175,8 @@ export default function Home() {
            <div className="relative duration-500 flex flex-col mt-24 p-6 space-y-6 bg-white rounded-lg md:w-1/3 md:mt-16">
             {/* container */}
             <div className="absolute -ml-10 left-1/2 -top-10 md:left-16">
-              <div className="flex items-center justify-center w-20 h-20 p-4 rounded-full bg-veryDarkViolet">
-                <Image src={iconFullyCus} alt=''/>
+              <div className="flex items-center ficon2 justify-center w-20 h-20 p-4 rounded-full bg-veryDarkViolet">
+                <Image src={iconFullyCus} className='ficon' alt=''/>
               </div>
             </div>
             <h5 className="pt-6 text-xl font-bold text-center capitalize md:text-left">
@@ -191,11 +191,11 @@ export default function Home() {
       <section id="cta" className="py-24 bg-darkViolet">
         <div className="flex flex-col p-2 space-y-6">
           <h5 className="mx-auto space-y-10 text-4xl font-bold text-white text-center">
-            Boost your links today
+            Shorten Link Now
           </h5>
-          <button className="px-10 py-5 mx-auto text-2xl font-bold text-white rounded-full bg-cyan hover:bg-cyanLight md:text-base md:py-3 focus:outline-none">
-            Get Started
-          </button>
+          <a href='#link-form' className="px-10 py-5 mx-auto text-2xl font-bold text-white rounded-full bg-cyan hover:bg-cyanLight md:text-base md:py-3 focus:outline-none">
+            Go to shortener
+          </a>
         </div>
       </section>
       <footer className="py-16 bg-veryDarkViolet">
@@ -226,7 +226,7 @@ export default function Home() {
             <div className="flex flex-col items-center w-full md:items-start">
               <div className="mb-5 font-bold text-white capitalize">Company</div>
               <div className="flex flex-col items-center space-y-3 md:items-start">
-                <a href="#" className="capitalize text-grayishViolet hover:text-cyan">About</a>
+                <a href='/api/about' className="capitalize text-grayishViolet hover:text-cyan">About</a>
                 <a href="#" className="capitalize text-grayishViolet hover:text-cyan">Our team</a>
                 <a href="#" className="capitalize text-grayishViolet hover:text-cyan">Careers</a>
                 <a href="#" className="capitalize text-grayishViolet hover:text-cyan">Contact</a>
