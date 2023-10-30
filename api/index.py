@@ -19,4 +19,4 @@ def return_home():
 
 @app.route("/api/about", methods=['GET'])
 def about_page():
-    return '<a href="/">Go Back</a><br><h2>This is currently a place holder page as this project is being expanded</h2>'
+    return jsonify(message='This is a temporary place holder while the project is expanding to the about page')
