@@ -6,12 +6,11 @@ import fb from "public/images/icon-facebook.svg";
 import twitterX from "public/images/icon-twitter.svg";
 import pinterest from "public/images/icon-pinterest.svg";
 import instagram from "public/images/icon-instagram.svg";
-//@ts-ignore
-// import navToggle from '../toggleScript.tsx';
+import { createMobileNav } from "../toggleScript";
 
 export default function About(){
     useEffect(() => {
-      // navToggle
+      createMobileNav();
     }, []);
     return (<>
         {/* nav */}

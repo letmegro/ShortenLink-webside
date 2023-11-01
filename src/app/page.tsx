@@ -1,3 +1,4 @@
+"use client"
 import Image from 'next/image';
 import { useEffect } from 'react';
 import logo from 'public/images/logo.svg';
@@ -10,14 +11,11 @@ import twitterX from "public/images/icon-twitter.svg";
 import pinterest from "public/images/icon-pinterest.svg";
 import instagram from "public/images/icon-instagram.svg";
 //@ts-ignore
-import form from './errMsg.tsx';
-form
-//@ts-ignore
-import navToggle from './toggleScript.tsx';
-navToggle
+import { setupListener } from './errMsg';
+import { createMobileNav } from "./toggleScript";
 
 export default function Home() {
-  
+  useEffect(() => {createMobileNav(); setupListener();},[]);
   return (
     <main>
       {/* nav */}

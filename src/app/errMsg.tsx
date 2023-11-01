@@ -1,21 +1,22 @@
 'use client'
 import { error } from 'console';
 import React, { useEffect, useState } from 'react';
-// shorten link control access variables
-const input = document.getElementById('link-input') as HTMLInputElement;
-const linkForm = document.getElementById('link-form') as HTMLFormElement;
-const errMsg = document.getElementById('err-msg') as HTMLDivElement;
-const btn = document.getElementById('shorten-btn') as HTMLButtonElement;
-const copyBtn = document.getElementById('copyBtn') as HTMLButtonElement;
 
-copyBtn?.addEventListener('click', copyLink);
 
 function copyLink(){
+  const copyBtn = document.getElementById('copyBtn') as HTMLButtonElement;
   navigator.clipboard.writeText(shortenedLink);
   copyBtn.innerHTML = "Copied!";
 }
 
-linkForm?.addEventListener('submit', formSubmit);
+export function setupListener(){
+  const linkForm = document.getElementById('link-form') as HTMLFormElement;
+  const copyBtn = document.getElementById('copyBtn') as HTMLButtonElement;
+
+  copyBtn?.addEventListener('click', copyLink);
+  linkForm?.addEventListener('submit', formSubmit);
+}
+
 
 function checkUrl (string:any) {
     let givenURL ;
@@ -52,7 +53,8 @@ function checkUrl (string:any) {
   }
   
   async function callShorten(link:any){
-    
+    const btn = document.getElementById('shorten-btn') as HTMLButtonElement;
+    const copyBtn = document.getElementById('copyBtn') as HTMLButtonElement;
     btn.innerHTML = message;
     btn.disabled = true;
     await fetch("/api/shorten", {
@@ -84,6 +86,8 @@ const setOriginalLink = (lin:any) => {
 }
 
 function formSubmit(e:any){
+  const errMsg = document.getElementById('err-msg') as HTMLDivElement;
+  const input = document.getElementById('link-input') as HTMLInputElement;
     e.preventDefault();
     if(input.value === "" || !checkUrl(input.value)){
         errMsg.innerHTML = "Please enter a valid link";
