@@ -6,6 +6,7 @@ import fb from "public/images/icon-facebook.svg";
 import twitterX from "public/images/icon-twitter.svg";
 import pinterest from "public/images/icon-pinterest.svg";
 import instagram from "public/images/icon-instagram.svg";
+import hardAtWork from 'public/images/at-work.svg';
 import { createMobileNav } from "../toggleScript";
 
 export default function About(){
@@ -53,6 +54,7 @@ export default function About(){
                   <p className="text-md font-semibold text-center">
                     This page is under construction please be patient while the developer comes up with a pretend about for this pretend company website.
                   </p>
+                  <a href="/"><Image alt="Hard at work" className="ficon w-64 items-center justify-center mx-auto p-4" src={hardAtWork}></Image></a>
                 </div>
             </div>
 
@@ -60,7 +62,7 @@ export default function About(){
         
         {/* footer */}
         <footer className="py-16 bg-veryDarkViolet">
-        <div className="container flex flex-col items-center justify-between mx-auto space-y-16 md:flex-row md:space-y-0 md:items-start">
+        <div className="container md:px-2 flex flex-col items-center justify-between mx-auto space-y-16 md:flex-row md:space-y-0 md:items-start">
           <Image src={logo} alt=''/>
 
           {/* menus container */}
