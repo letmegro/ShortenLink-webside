@@ -10,6 +10,7 @@ import instagram from "public/images/icon-instagram.svg";
 import navToggle from '../toggleScript.tsx';
 navToggle
 
+
 export  default function About(){
     
     return (<>
