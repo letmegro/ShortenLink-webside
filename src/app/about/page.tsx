@@ -7,13 +7,11 @@ import twitterX from "public/images/icon-twitter.svg";
 import pinterest from "public/images/icon-pinterest.svg";
 import instagram from "public/images/icon-instagram.svg";
 //@ts-ignore
-import navToggle from '../toggleScript.tsx';
+// import navToggle from '../toggleScript.tsx';
 
-
-
-export  default function About(){
+export default function About(){
     useEffect(() => {
-      navToggle
+      // navToggle
     }, []);
     return (<>
         {/* nav */}
@@ -124,13 +122,3 @@ export  default function About(){
       </footer>
     </>);
 }
-
-// async function getMsg(){
-//     await fetch('/api/about', {method: 'GET'}).then(res => res.json()).then(data => 
-//         {
-//             const doc = document.getElementById('tempMsg') as HTMLHeadingElement;
-//             doc.innerText = JSON.stringify((data['message'])).replaceAll('"', '');
-//         });
-//     return "";
-// }
-

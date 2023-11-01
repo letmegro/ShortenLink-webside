@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { useEffect } from 'react';
 import logo from 'public/images/logo.svg';
 import illustration from "public/images/illustration-working.svg";
 import iconBrandRec from "public/images/icon-brand-recognition.svg";
