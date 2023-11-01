@@ -49,6 +49,11 @@ export default function About(){
                 <h1 className="text-center mx-auto font-bold text-[50px] text-veryDarkBlue">
                     About Project
                 </h1>
+                <div className="mx-auto justify-center items center w-full px-3 md:px-6 py-4 md:py-12">
+                  <p className="text-md font-semibold text-center">
+                    This page is under construction please be patient while the developer comes up with a pretend about for this pretend company website.
+                  </p>
+                </div>
             </div>
 
         </main>
@@ -121,3 +126,4 @@ export default function About(){
       </footer>
     </>);
 }
+
