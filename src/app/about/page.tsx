@@ -8,11 +8,13 @@ import pinterest from "public/images/icon-pinterest.svg";
 import instagram from "public/images/icon-instagram.svg";
 //@ts-ignore
 import navToggle from '../toggleScript.tsx';
-navToggle
+
 
 
 export  default function About(){
-    
+    useEffect(() => {
+      navToggle
+    }, []);
     return (<>
         {/* nav */}
         <nav className='relative container mx-auto p-6'>
