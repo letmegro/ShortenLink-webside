@@ -226,8 +226,8 @@ export default function Home() {
             <div className="flex flex-col items-center w-full md:items-start">
               <div className="mb-5 font-bold text-white capitalize">Company</div>
               <div className="flex flex-col items-center space-y-3 md:items-start">
+                <a href="/" className="capitalize text-grayishViolet hover:text-cyan">Home</a>
                 <a href='about' className="capitalize text-grayishViolet hover:text-cyan">About</a>
-                <a href="#" className="capitalize text-grayishViolet hover:text-cyan">Our team</a>
                 <a href="#" className="capitalize text-grayishViolet hover:text-cyan">Careers</a>
                 <a href="#" className="capitalize text-grayishViolet hover:text-cyan">Contact</a>
               </div>
