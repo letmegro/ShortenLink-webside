@@ -12,12 +12,10 @@ import instagram from "public/images/icon-instagram.svg";
 //@ts-ignore
 import form from './errMsg.tsx';
 form
-//@ts-ignore
-import navToggle from './toggleScript.tsx';
-navToggle
+import { createMobileNav } from "./toggleScript";
 
 export default function Home() {
-  
+  useEffect(() => {createMobileNav()},[]);
   return (
     <main>
       {/* nav */}
