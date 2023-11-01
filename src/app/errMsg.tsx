@@ -37,13 +37,11 @@ function checkUrl (string:any) {
     shortenedLink = newLink;
   }
 
-  // shortened link result constrol access variables
-  const linkContainer = document.getElementById('linkContainer') as HTMLDivElement;
-  const ogLink = document.getElementById('ogLink') as HTMLParagraphElement;
-  const newLink = document.getElementById('shortenedLink') as HTMLDivElement;
-  const loader = document.getElementById('loader') as HTMLDivElement;
-
   const updateShortenedLinks = () => {
+    const loader = document.getElementById('loader') as HTMLDivElement;
+    const newLink = document.getElementById('shortenedLink') as HTMLDivElement;
+    const ogLink = document.getElementById('ogLink') as HTMLParagraphElement;
+    const linkContainer = document.getElementById('linkContainer') as HTMLDivElement;
     loader.classList.add('hidden');
     loader.classList.remove('flex');
     linkContainer.classList.add('flex');
@@ -86,6 +84,8 @@ const setOriginalLink = (lin:any) => {
 }
 
 function formSubmit(e:any){
+  const loader = document.getElementById('loader') as HTMLDivElement;
+  const linkContainer = document.getElementById('linkContainer') as HTMLDivElement;
   const errMsg = document.getElementById('err-msg') as HTMLDivElement;
   const input = document.getElementById('link-input') as HTMLInputElement;
     e.preventDefault();
