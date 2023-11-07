@@ -8,41 +8,16 @@ import pinterest from "public/images/icon-pinterest.svg";
 import instagram from "public/images/icon-instagram.svg";
 import hardAtWork from 'public/images/at-work.svg';
 import { createMobileNav } from "../toggleScript";
+import Nav from "../nav";
 
 export default function About(){
     useEffect(() => {
       createMobileNav();
     }, []);
     return (<>
-        {/* nav */}
-        <nav className='relative container mx-auto p-6'>
-            {/* flex container */}
-            <div className='flex items-center justify-between'>
-            {/* logo container/menu */}
-            <div className='flex items-center space-x-20'>
-                <Image src={logo} alt=''/>
-                <div className='hidden md:flex space-x-8 font-bold'>
-                </div>
-            </div>
-            {/* right buttons menu */}
-            <div className='hidden md:flex items-center space-x-6 font-bold text-grayishViolet'>
-                
-            </div>
-            <div className='md:hidden'>
-                <button id='menu-btn' type='button' className='z-40 block hamburger md:hidden focus:outline-none'>
-                    <span className='hamTop'></span>
-                    <span className='hamMiddle'></span>
-                    <span className='hamBottom'></span>
-                </button>
-                </div>
-            </div>
-            {/* add drop menu */}
-            <div id="menu" className="absolute hidden md:hidden p-6 rounded-lg bg-darkViolet left-6 right-6 top-20 z-100">
-                <div className="flex flex-col items-center justify-center w-full space-y-6 font-bold text-white rounded-sm">
-                    
-                </div>
-            </div>
-        </nav>
+        {/* nav bar */}
+        <Nav/>
+        {/* end of nav bar */}
         
         {/* body */}
         <main>
