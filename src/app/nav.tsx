@@ -11,9 +11,8 @@ export default function Nav(){
             <div className='flex items-center space-x-20'>
             <Image src={logo} alt=''/>
             <div className='hidden md:flex space-x-8 font-bold'>
-                <a href='#' className='text-grayishViolet hover:text-veryDarkViolet'>Features</a>
-                <a href='#' className='text-grayishViolet hover:text-veryDarkViolet'>Pricing</a>
-                <a href='#' className='text-grayishViolet hover:text-veryDarkViolet'>Resources</a>
+                <a href='/#link-form' className='text-grayishViolet hover:text-veryDarkViolet'>Shorten Link</a>
+                <a href='/#stats' className='text-grayishViolet hover:text-veryDarkViolet'>Statistics</a>
             </div>
             </div>
             {/* right buttons menu */}
@@ -34,9 +33,8 @@ export default function Nav(){
         {/* add drop menu */}
         <div id="menu" className="absolute hidden md:hidden p-6 rounded-lg bg-darkViolet left-6 right-6 top-20 z-100">
             <div className="flex flex-col items-center justify-center w-full space-y-6 font-bold text-white rounded-sm">
-            <a href="#" className="w-full text-center hover:text-cyan">Features</a>
-            <a href="#" className="w-full text-center hover:text-cyan">Pricing</a>
-            <a href="#" className="w-full text-center hover:text-cyan">Resources</a>
+            <a href="/#link-form" className="w-full text-center hover:text-cyan">Shorten Link</a>
+            <a href="/#stats" className="w-full text-center hover:text-cyan">Statistics</a>
             <a href="#" className="w-full pt-6 border-t border-gray-400 text-center hover:text-cyan">Login</a>
             <a href="#" className="w-full py-3 text-center rounded-full bg-cyan hover:opacity-70">Sign Up</a>
             </div>

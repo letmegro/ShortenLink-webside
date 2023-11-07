@@ -23,7 +23,10 @@ export default function About(){
                 </h1>
                 <div className="mx-auto justify-center items center w-full px-3 md:px-6 py-4 md:py-12">
                   <p className="text-md font-semibold text-center">
-                    This page is under construction please be patient while the developer comes up with a pretend about for this pretend company website.
+                    This page is under construction please be patient while the developer comes up with a pretend career page for this pretend company website.
+                  </p>
+                  <p className="text-sm font-semibold text-center text-gray-400 pt-4">
+                    Note: "I am creating this in order to mess around with different tools as this entire project is my sandbox!"
                   </p>
                   <a href="/"><Image alt="Hard at work" className="ficon w-64 items-center justify-center mx-auto p-4" src={hardAtWork}></Image></a>
                 </div>
