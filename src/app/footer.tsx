@@ -24,8 +24,7 @@ export default function Footer(){
             <div className="flex flex-col items-center w-full md:items-start">
               <div className="mb-5 font-bold text-white capitalize">Resources</div>
               <div className="flex flex-col items-center space-y-3 md:items-start">
-                <a href="#" className="capitalize text-grayishViolet hover:text-cyan">Developers</a>
-                <a href="#" className="capitalize text-grayishViolet hover:text-cyan">Support</a>
+                <a href="about-developer" className="capitalize text-grayishViolet hover:text-cyan">Developers</a>
               </div>
             </div>
             {/* menu 3 */}
