@@ -24,13 +24,15 @@ const config: Config = {
         180: '32rem',
       },
       keyframes: {
-        shake: {
-          '25%, 75%': { transform: 'rotate(-20deg)'},
-          '0%, 50%, 100%': { transform: 'rotate(20deg)'},
+        arrow: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1'},
         },
       },
       animation: {
-        'shake-fast' : 'shake 2s ease-in infinite',
+        'arrow' : 'arrow 1s 0.1s ease-in infinite',
+        'arrow1' : 'arrow 1s 0.3s ease-in infinite',
+        'arrow2' : 'arrow 1s 0.6s ease-in infinite',
       },
     },
   },

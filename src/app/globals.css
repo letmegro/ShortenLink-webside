@@ -116,3 +116,40 @@
         opacity: 100%;
     }
 }
+
+.arrow{
+    transform: rotate(90deg);
+}
+
+.line{
+    @apply rounded-lg m-1 mb-2 block  border-red border-[3px];
+}
+
+.input-decor{
+    @apply focus:scale-105 focus:border-gray-500 rounded-md outline-none border-2 border-black;
+}
+
+.custom-scroll-tArea::-webkit-scrollbar{
+    width: 7px;
+    overflow: hidden;
+}
+
+.custom-scroll-tArea::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    overflow: hidden;
+}
+
+.custom-scroll-tArea::-webkit-scrollbar-thumb{
+    background-color: darkgray;
+    outline: 1px solid slategray;
+    overflow: hidden;
+    @apply rounded-lg;
+}
+
+.custom-scroll-tArea:hover::-webkit-scrollbar-thumb{
+    background-color: rgb(33, 117, 113);
+}
+
+.mail{
+    filter: invert(79%) sepia(61%) saturate(464%) hue-rotate(130deg) brightness(89%) contrast(85%);
+}
