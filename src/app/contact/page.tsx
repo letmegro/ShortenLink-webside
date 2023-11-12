@@ -55,7 +55,7 @@ export default function About(){
                   </h1>
                   <span className="line"></span>
                   <div className="container mx-auto max-w-full">
-                    <h1 className="text-center">insert map here</h1>
+                    <h1 className="text-center">"Company location map to be added"</h1>
                   </div>
                 </div>
                 {/* contact form */}
