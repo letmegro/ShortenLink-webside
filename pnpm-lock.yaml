@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@types/mapbox-gl':
+    specifier: ^2.7.18
+    version: 2.7.18
   '@types/node':
     specifier: 20.8.10
     version: 20.8.10
@@ -316,8 +319,18 @@ packages:
       tslib: 2.6.2
     dev: false
 
+  /@types/geojson@7946.0.13:
+    resolution: {integrity: sha512-bmrNrgKMOhM3WsafmbGmC+6dsF2Z308vLFsQ3a/bT8X8Sv5clVYpPars/UPq+sAaJP+5OoLAYgwbkS5QEJdLUQ==}
+    dev: false
+
   /@types/json5@0.0.29:
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
+    dev: false
+
+  /@types/mapbox-gl@2.7.18:
+    resolution: {integrity: sha512-3Yq4v8IdigSs2oD70dRJuWY/6PoW9i6MyXOx8DvJNc6CuSXRMleVdNiFYa5E0w6tSCfL+b+cGau5Em09MIujtQ==}
+    dependencies:
+      '@types/geojson': 7946.0.13
     dev: false
 
   /@types/node@20.8.10:
