@@ -4,6 +4,7 @@ import Image from 'next/image';
 import arrow from 'public/images/arrow.svg';
 import cImg from 'public/images/contact-pages.png';
 import eIcon from 'public/images/email-icon.svg';
+import map from 'public/images/earth.png';
 import { createMobileNav } from "../toggleScript";
 import Nav from "../nav";
 import Footer from "../footer";
@@ -19,7 +20,7 @@ export default function About(){
         {/* end of nav bar */}
         
         {/* body*/}
-        <main>
+        <main className="px-4">
             <div className="h-fit max-w-full justify-center container flex flex-col md:flex-row items center mx-auto">
               <div className="pt-8  max-h-full lg:max-h-180 mx-auto md:w-2/3">
                   <Image className="cut h-full" alt="Connect" src={cImg}></Image>
@@ -55,12 +56,13 @@ export default function About(){
                   </h1>
                   <span className="line"></span>
                   
-                  <div className="container mx-auto max-w-full">
-                    <h1 className="text-center">"Company location map to be added"</h1>
+                  <div className="relative container mx-auto w-full object-contain h-[500px] border-4 rounded-md border-blue-600">
+                   <figure> <Image alt="Map" src={map} style={{backgroundSize: 1000}} className="absolute h-full w-full mx-auto"></Image></figure>
                   </div>
                 </div>
                 <div className="xl:w-1/2 m-12">
                   {/* contact form */}
+                  
                   <form className="xl:w-1/2 space-y-4 md:mt-12 shadow-lg shadow-zinc-300 bg-gray-50 border-solid border-2 p-2 rounded-lg border-blue-950 container mx-auto">
                     <h1 className="select-none mb-2 text-3xl md:text-4xl font-semibold text-center">
                       Contact Us
