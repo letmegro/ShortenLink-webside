@@ -20,8 +20,8 @@ export default function About(){
         {/* end of nav bar */}
         
         {/* body*/}
-        <main className="px-4">
-            <div className="h-fit max-w-full justify-center container flex flex-col md:flex-row items center mx-auto">
+        <main>
+            <div id="t1" className="h-fit max-w-full justify-center container flex flex-col md:flex-row items center mx-auto">
               <div className="pt-8  max-h-full lg:max-h-180 mx-auto md:w-2/3">
                   <Image className="cut h-full" alt="Connect" src={cImg}></Image>
                 
