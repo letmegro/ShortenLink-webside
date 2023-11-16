@@ -1,5 +1,5 @@
 'use client'
-import { useEffect } from "react";
+import { useEffect, useMemo } from "react";
 import Image from 'next/image';
 import arrow from 'public/images/arrow.svg';
 import cImg from 'public/images/contact-pages.png';
@@ -8,19 +8,26 @@ import map from 'public/images/earth.png';
 import { createMobileNav } from "../toggleScript";
 import Nav from "../nav";
 import Footer from "../footer";
+import dynamic from "next/dynamic";
+
+
 
 export default function About(){
     useEffect(() => {
       createMobileNav();
       
     }, []);
+    const Map = useMemo(() => dynamic(() => import('../Maps'), {
+      loading: () => <p>Map is loading</p>,
+      ssr: false
+    }), []);
     return (<>
         {/* nav bar */}
         <Nav/>
         {/* end of nav bar */}
         
         {/* body*/}
-        <main>
+        <main className=" z-10">
             <div id="t1" className="h-fit max-w-full justify-center container flex flex-col md:flex-row items center mx-auto">
               <div className="pt-8  max-h-full lg:max-h-180 mx-auto md:w-2/3">
                   <Image className="cut h-full" alt="Connect" src={cImg}></Image>
@@ -57,7 +64,8 @@ export default function About(){
                   <span className="line"></span>
                   
                   <div className="relative container mx-auto w-full object-contain h-[500px] border-4 rounded-md border-blue-600">
-                   <figure> <Image alt="Map" src={map} style={{backgroundSize: 1000}} className="absolute h-full w-full mx-auto"></Image></figure>
+                   {/* <figure> <Image alt="Map" src={map} style={{backgroundSize: 1000}} className="absolute h-full w-full mx-auto"></Image></figure> */}
+                   <Map className="absolute"/>
                   </div>
                 </div>
                 <div className="xl:w-1/2 m-12">
