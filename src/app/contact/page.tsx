@@ -48,9 +48,9 @@ export default function About(){
             
             {/* contact section */}
             <section id="contact">
-              <div className="m-2 flex flex-col md:flex-row mt-20 justify-between">
+              <div className="m-2 flex flex-col lg:flex-row mt-20 justify-between">
                 {/* map */}
-                <div className="container mx-auto p-2 md:w-1/2">
+                <div className="container mx-auto p-2 lg:w-1/2">
                   <h1 className="select-none text-3xl md:text-4xl font-semibold text-center">
                     Company Locations
                   </h1>
