@@ -28,5 +28,7 @@ export default function MyMap() {
               </Popup>
             </Marker>
         </MapContainer>
+        // <a href="https://www.freepik.com/icon/building_5023271#fromView=keyword&term=Building&page=1&position=47&uuid=5693a443-1a1e-4fcd-83d0-af321449d250">Icon by vanda arief</a>
+        // ToDo: find a way to add attribute to the icon used as marker
 }
 
