@@ -64,8 +64,8 @@ export default function About(){
                   <span className="line"></span>
                   
                   <div className="relative container mx-auto w-full object-contain h-[500px] border-4 rounded-md border-blue-600">
-                   {/* <figure> <Image alt="Map" src={map} style={{backgroundSize: 1000}} className="absolute h-full w-full mx-auto"></Image></figure> */}
-                   <Map className="absolute"/>
+                   
+                   <Map/>
                   </div>
                 </div>
                 <div className="xl:w-1/2 m-12">
