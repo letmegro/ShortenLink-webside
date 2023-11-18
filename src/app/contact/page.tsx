@@ -42,7 +42,7 @@ export default function About(){
                   Contact us via email, Phone call, or our website form!
                 </p>
               </div>
-                
+                 
             </div>
             <div className="container my-4 hover:mt-0 hover:mb-0  mx-auto">
                   <div className="group cursor-pointer -space-y-8 transition-all duration-300 text-center justify-center items-center mx-auto">
