@@ -4,7 +4,8 @@ import { MapContainer, Marker, Popup, TileLayer, Tooltip } from "react-leaflet"
 import "leaflet/dist/leaflet.css"
 import "leaflet-defaulticon-compatibility"
 import "leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css"
-import test from 'public/images/building.png';
+import pin from 'public/images/building.png';
+import mapIcon from 'public/images/map-icon.png';
 import L from "leaflet";
 
 
@@ -19,12 +20,15 @@ export default function MyMap() {
             />
             
             <Marker position={[51.505, -0.09]} icon={L.icon({
-              iconUrl: test.src,
+              iconUrl: pin.src,
               iconSize: [24, 24]
             })}>
               
               <Popup>
-                Shortly HQ: 1520 No where Ave.
+                <p className="flex  flex-col items-center ">
+                  Shortly HQ: 1520 No where Ave.
+                  <a href={"//" + process.env.NEXT_PUBLIC_LOCATION_1} target="_blank" ><img alt="directions" className="md:w-[16px] md:h-[16px]" src={mapIcon.src}></img></a>
+                </p>
               </Popup>
             </Marker>
         </MapContainer>
