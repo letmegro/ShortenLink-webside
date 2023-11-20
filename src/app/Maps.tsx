@@ -6,6 +6,7 @@ import "leaflet-defaulticon-compatibility"
 import "leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css"
 import pin from 'public/images/building.png';
 import mapIcon from 'public/images/map-icon.png';
+import londonHQ from 'public/images/london-hq.png';
 import L from "leaflet";
 
 
@@ -25,10 +26,30 @@ export default function MyMap() {
             })}>
               
               <Popup>
-                <p className="flex  flex-col items-center ">
-                  Shortly HQ: 1520 No where Ave.
-                  <a href={"//" + process.env.NEXT_PUBLIC_LOCATION_1} target="_blank" ><img alt="directions" className="md:w-[16px] md:h-[16px]" src={mapIcon.src}></img></a>
-                </p>
+                <div id="b-1" className=" flex-col justify-center items-center">
+                  <p className="flex flex-col items-center ">
+                    Shortly HQ: 1520 No where Ave.
+                    {/*  */}
+                  </p>
+                  <div className="flex justify-center">
+                    <div className="cursor-pointer group expand-1 max-w-fit w-[110px] h-[100px] flex items-center justify-center rounded-lg ">
+                    <div className="border-2 border-slate-500 rounded-lg group-hover:hidden block w-[100px] h-[100px]  top-0 bottom-0 left-0 right-0"></div>
+                      <div onClick={() => expand('back-1', 'b-1')} className="z-10 group-hover:block hidden w-[100px] h-[100px] bg-black bg-opacity-50 rounded-md top-0 bottom-0 left-0 right-0 ">
+                        <p className=" text-white text-center pt-3 text-lg z-20">Expand</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="back-1"  className="hidden flex flex-col border-4 border-slate-500 rounded-md">
+                  <div className="expand-1 w-[182px] h-[200px]"></div>
+                  <div onClick={ () => expand('back-1', 'b-1')}  className="top-4 left-7 absolute px-3 py-2 bg-red rounded-xl m-1 text-white font-semibold opacity-40 hover:opacity-100 cursor-pointer transition duration-500 ">Back</div>
+                  <a href={"//" + process.env.NEXT_PUBLIC_LOCATION_1} target="_blank" >
+                    <div className="absolute bottom-4 right-7 text-white font-semibold px-3 py-2 bg-orange-500 rounded-xl m-3 cursor-pointer hover:bg-orange-400 transition duration-500a">
+                      Directions
+                    </div>
+                  </a>
+                  
+                </div>
               </Popup>
             </Marker>
         </MapContainer>
@@ -36,3 +57,9 @@ export default function MyMap() {
         // ToDo: find a way to add attribute to the icon used as marker
 }
 
+function expand(btn: string, original: string){
+  document.getElementById(btn)?.classList.toggle('hidden');
+  document.getElementById(btn)?.classList.toggle('flex');
+  document.getElementById(original)?.classList.toggle('hidden');
+  document.getElementById(original)?.classList.toggle('flex');
+}
