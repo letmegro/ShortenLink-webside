@@ -5,8 +5,6 @@ import "leaflet/dist/leaflet.css"
 import "leaflet-defaulticon-compatibility"
 import "leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css"
 import pin from 'public/images/building.png';
-import mapIcon from 'public/images/map-icon.png';
-import londonHQ from 'public/images/london-hq.png';
 import L from "leaflet";
 
 
