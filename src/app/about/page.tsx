@@ -1,7 +1,7 @@
 'use client'
 import { useEffect } from "react";
 import Image from 'next/image';
-import hardAtWork from 'public/images/at-work.svg';
+import hardAtWork from '../../../public/images/at-work.svg';
 import { createMobileNav } from "../toggleScript";
 import Nav from "../nav";
 import Footer from "../footer";
