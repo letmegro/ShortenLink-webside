@@ -1,10 +1,10 @@
 "use client"
 import Image from 'next/image';
 import { useEffect } from 'react';
-import illustration from "public/images/illustration-working.svg";
-import iconBrandRec from "public/images/icon-brand-recognition.svg";
-import iconDetaledRec from "public/images/icon-detailed-records.svg";
-import iconFullyCus from "public/images/icon-fully-customizable.svg";
+import illustration from "../../public/images/illustration-working.svg";
+import iconBrandRec from "../../public/images/icon-brand-recognition.svg";
+import iconDetaledRec from "../../public/images/icon-detailed-records.svg";
+import iconFullyCus from "../../public/images/icon-fully-customizable.svg";
 
 import Nav from './nav';
 import Footer from './footer';

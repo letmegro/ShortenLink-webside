@@ -1,9 +1,9 @@
 import Image from "next/image";
-import fb from "public/images/icon-facebook.svg";
-import twitterX from "public/images/icon-twitter.svg";
-import pinterest from "public/images/icon-pinterest.svg";
-import instagram from "public/images/icon-instagram.svg";
-import logo from 'public/images/logo.svg';
+import fb from "../../public/images/icon-facebook.svg";
+import twitterX from "../../public/images/icon-twitter.svg";
+import pinterest from "../../public/images/icon-pinterest.svg";
+import instagram from "../../public/images/icon-instagram.svg";
+import logo from '../../public/images/logo.svg';
 
 export default function Footer(){
     return (<>
