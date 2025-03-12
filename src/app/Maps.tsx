@@ -4,7 +4,7 @@ import { MapContainer, Marker, Popup, TileLayer, Tooltip } from "react-leaflet"
 import "leaflet/dist/leaflet.css"
 import "leaflet-defaulticon-compatibility"
 import "leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css"
-import pin from 'public/images/building.png';
+import pin from '../../public/images/building.png';
 import L from "leaflet";
 
 
