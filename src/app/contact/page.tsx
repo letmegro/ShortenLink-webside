@@ -1,10 +1,9 @@
 'use client'
 import { useEffect, useMemo } from "react";
 import Image from 'next/image';
-import arrow from 'public/images/arrow.svg';
-import cImg from 'public/images/contact-pages.png';
-import eIcon from 'public/images/email-icon.svg';
-import map from 'public/images/earth.png';
+import arrow from '../../../public/images/arrow.svg';
+import cImg from '../../../public/images/contact-pages.png';
+import eIcon from '../../../public/images/email-icon.svg';
 import { createMobileNav } from "../toggleScript";
 import Nav from "../nav";
 import Footer from "../footer";
